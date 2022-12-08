@@ -1,0 +1,40 @@
+.gallery {
+  overflow: hidden;
+}
+
+.gallery__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #27AE60;
+
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.gallery__desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 118%;
+  text-align: center;
+  color: #000000;
+  padding: 0 17px;
+
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.gallery__link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid black;
+}
+
+.gallery__image {
+
+  margin-top: -75px;
+  //left: -125px;
+  /* width: auto;
+  height: 450px; */
+}

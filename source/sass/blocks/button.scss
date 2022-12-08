@@ -1,0 +1,32 @@
+.button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 245px;
+  height: 67px;
+  padding: 7px 7px 7px 43px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+
+  box-sizing: border-box;
+  background: #27AE60;
+  border-radius: 65px;
+  border: 5px solid white;
+  box-shadow: 0 0 0 1px rgba(25, 130, 189, 0.11);
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-color: #35B86C;
+    border-radius: 50%;
+    background: #35B86C url("../../img/button_arrow.svg") center no-repeat;
+  }
+}

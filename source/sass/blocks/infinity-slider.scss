@@ -1,0 +1,38 @@
+.infinity-slider {
+  position: relative;
+  padding: 0 30px;
+}
+
+.infinity-slider__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 118%;
+  text-align: center;
+  color: #27AE60;
+
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+.infinity-slider__list {
+  margin: 0;
+  padding: 0;
+}
+
+.infinity-slider__item {
+  list-style: none;
+}
+
+.infinity-slider__control {
+  position: absolute;
+
+  &--left {
+    top: 301px;
+    left: 2.5px;
+  }
+
+  &--right {
+    top: 301px;
+    right: 2.5px;
+  }
+}

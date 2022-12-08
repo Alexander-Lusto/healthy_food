@@ -1,0 +1,33 @@
+html {
+  background-color: #000000;
+}
+
+.page {
+  font-family: 'Lato';
+  color: #000000;
+
+  width: 320px;
+  margin: 0 auto;
+  background: #FFFFFF url("../../img/background.png") top no-repeat;
+}
+
+.page__promo {
+  margin-bottom: 80px;
+}
+
+.page__slider {
+  margin-bottom: 0px;
+}
+
+.page__benefits {
+  margin-bottom: 65px;
+}
+
+.page__infinity-slider {
+  margin-bottom: 50px;
+}
+
+.page__features {
+  margin-bottom: 78px;
+}
+

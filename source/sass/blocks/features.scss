@@ -1,0 +1,35 @@
+.features {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 463px;
+  width: 100%;
+
+  background: url("../../img/advantage-girls.png") center no-repeat, url("../../img/background-2.png") center no-repeat ;
+  background-size: auto 518px; //200%
+  background-position: left -146px top 36px;
+}
+
+.features__tittle {
+  order: 2;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 118%;
+  color: #27AE60;
+
+  padding: 0 15px;
+  margin: 0;
+  margin-bottom: 40px;
+
+}
+
+.features__list {
+  order: 3;
+  padding: 0 20px 0 15px;
+  margin: 0;
+}
+
+.features__item {
+  margin-bottom: 31px;
+}
+

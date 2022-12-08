@@ -1,0 +1,24 @@
+.slider-control {
+  border: none;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background: #27AE60 center no-repeat;
+  cursor: pointer;
+
+  &--left {
+    background-image: url("../../img/slider_arrow_left.svg");
+  }
+
+  &--right {
+    background-image: url("../../img/slider_arrow_right.svg");
+  }
+
+  &--mobile-left {
+    background: transparent url("../../img/arrow_left_mobile.svg") center no-repeat;
+  }
+
+  &--mobile-right {
+    background: transparent url("../../img/arrow_right_mobile.svg") center no-repeat;
+  }
+}

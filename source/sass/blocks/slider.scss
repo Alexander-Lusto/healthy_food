@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  height: 501px;
+  overflow: hidden;
+}
+
+.slider__list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider__item {
+  list-style: none;
+}
+
+.slider__control {
+  position: absolute;
+
+  &--left {
+    top: 228px;
+    left: 14px;
+  }
+
+  &--right {
+    top: 228px;
+    right: 14px;
+  }
+}
+
+
+

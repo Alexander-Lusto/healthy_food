@@ -81,6 +81,13 @@ const minifyHTML = async () => {
 }
 export { minifyHTML };
 
+// fonts
+const copyFonts = async () => {
+  gulp.src('source/fonts/*.{woff,woff2}')
+    .pipe(gulp.dest('build/fonts'))
+}
+export { copyFonts };
+
 // clean
 const clean = () => {
   return deleteAsync(['build']);
@@ -91,6 +98,7 @@ export { clean };
 const build = gulp.series(
   clean,
   gulp.parallel(
+    copyFonts,
     styles,
     minifyHTML,
     optimizeImages)
