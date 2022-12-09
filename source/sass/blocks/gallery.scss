@@ -32,9 +32,31 @@
 }
 
 .gallery__image {
+  position: relative;
+  left: -236px;
+  top: -75px;
+  width: 986px;
+  height: auto;
+}
 
-  margin-top: -75px;
-  //left: -125px;
-  /* width: auto;
-  height: 450px; */
+@media(min-width: 768px) {
+  .gallery__title {
+    font-size: 41px;
+
+    margin-bottom: 13px;
+  }
+
+  .gallery__desc {
+    text-align: left;
+    font-size: 16px;
+
+    padding: 0 167px;
+  }
+
+  .gallery__image {
+    width: 1393px;
+    height: 816px;
+    top: -35px;
+    left: -290px;
+  }
 }

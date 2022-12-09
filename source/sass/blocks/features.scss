@@ -3,9 +3,9 @@
   flex-direction: column;
 
   padding-top: 463px;
-  width: 100%;
+  overflow: hidden;
 
-  background: url("../../img/advantage-girls.png") center no-repeat, url("../../img/background-2.png") center no-repeat ;
+  background: url("../../img/advantage-girls.png") center no-repeat, url("../../img/background-2.png") center no-repeat;
   background-size: auto 518px; //200%
   background-position: left -146px top 36px;
 }
@@ -33,3 +33,36 @@
   margin-bottom: 31px;
 }
 
+@media (min-width: 768px) {
+  .features {
+    padding-top: 900px;
+    padding-left: 90px;
+
+    background-size: 1100px auto;
+    background-position: top 100px left -115px;
+
+  }
+
+  .features__tittle {
+    font-size: 41px;
+
+    margin-bottom: 85px;
+  }
+
+  .features__list {
+    padding-right: 0;
+    width: 556px;
+  }
+
+  .features__item {
+    margin-bottom: 40px;
+  }
+
+  .features__item {
+    margin-bottom: 40px;
+  }
+
+  .features__item--identity {
+    margin-bottom: 55px;
+  }
+}

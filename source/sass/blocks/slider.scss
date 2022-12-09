@@ -10,7 +10,24 @@
 }
 
 .slider__item {
+  display: none;
+  text-align: center;
   list-style: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+.slider__slide-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 105.5%;
+  text-align: center;
+  color: #2B2B2B;
+
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .slider__control {
@@ -27,5 +44,142 @@
   }
 }
 
+@media(min-width: 768px) {
+  .slider {
+    height: 624px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 36px;
+      right: 0;
+
+      box-sizing: border-box;
+      width: 502px;
+      height: 502px;
+
+      border-radius: 50%;
+      border: 2px solid rgba(#27AE60, 0.1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 76px;
+      right: 40px;
+
+      box-sizing: border-box;
+      width: 420px;
+      height: 420px;
+
+      border-radius: 50%;
+      background-color: rgba(#27AE60, 0.1);
+    }
+  }
+
+  .slider__control {
+    display: none;
+  }
+
+  .slider__list {
+    position: relative;
+  }
+
+  .slider__item {
+    display: block;
+    position: relative;
+  }
+
+  .slider__slide-label {
+    position: absolute;
+    padding-right: 60px;
+    z-index: 2;
+
+    color: #BFBFBF;
+    font-size: 14px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      right: 16px;
+
+      box-sizing: border-box;
+      width: 29px;
+      height: 29px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(#27AE60, 0.3);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      right: 21px;
+
+      box-sizing: border-box;
+      width: 18px;
+      height: 18px;
+
+      border-radius: 50%;
+      background-color: rgba(#27AE60, 0.3);
+    }
+
+    &--first {
+      left: 17px;
+      top: 118px;
+    }
+
+    &--second {
+      left: 0px;
+      top: 280px;
+    }
+
+    &--third {
+      left: 10px;
+      top: 437px;
+    }
+  }
+
+  .slider__slide-label--active {
+    font-size: 18px;
+    color: #2B2B2B;
+
+    &::before {
+      top: -17px;
+      right: 0;
+
+      width: 50.5px;
+      height: 50.5px;
+
+      border: 1px solid #27AE60;
+    }
+
+    &::after {
+      top: -8px;
+      right: 9px;
+
+      width: 33px;
+      height: 33px;
+
+      background-color: #27AE60;
+    }
+  }
+
+  .slider__slide-image {
+    display: none;
+
+    position: absolute;
+    top: 15px;
+    left: -172px;
+  }
+
+  .slider__slide-image--active {
+    z-index: 1;
+    display: block;
+  }
+}
 
 

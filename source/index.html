@@ -14,10 +14,10 @@
     <a class="header__logo logo" href="">
       Здоровая мама
     </a>
-    <nav class="header__navigation header__navigation--closed">
+    <nav class="header__navigation">
       <ul class="header__navigation-list">
         <li class="header__navigation-item">
-          <a class="header__navigation-link header__navigation-link--current" href="#">Важность правильного питания</a>
+          <a class="header__navigation-link header__navigation-link--active" href="#">Важность правильного питания</a>
         </li>
         <li class="header__navigation-item">
           <a class="header__navigation-link" href="#">Почему мы?</a>
@@ -41,17 +41,29 @@
     </section>
     <section class="slider page__slider">
       <ul class="slider__list">
-        <li class="slider__item  slide slide--current">
-          <h2 class="slide__title">Для беременных</h2>
-          <img class="slide__image" src="img/slider_1.png" width="320" height="497"  alt="Беременная девушка">
+        <li class="slider__item  slider__item--current">
+          <input class="visually-hidden" type="radio" name="slider" value="1">
+          <label class="slider__slide-label slider__slide-label--first slider__slide-label--active">
+            Для беременных
+          </label>
+          <picture>
+            <source srcset="img/slide_1_tablet.png" media="(min-width: 768px)">
+            <img class="slider__slide-image slider__slide-image--active" src="img/slider_1.png"  alt="Беременная девушка">
+          </picture>
         </li>
-        <li class="slider__item slide">
-          <h2 class="slide__title">Для кормящих</h2>
-          <img class="slide__image" src="img/slider_2.png" width="260" height="419" alt="Девушка с ребенком на руках">
+        <li class="slider__item">
+          <input class="visually-hidden" type="radio" name="slider" value="2">
+          <label class="slider__slide-label slider__slide-label--second">
+            Для кормящих
+          </label>
+          <img class="slider__slide-image" src="img/slider_2.png" width="260" height="419" alt="Девушка с ребенком на руках">
         </li>
-        <li class="slider__item slide">
-          <h2 class="slide__title">Безопасные лакомства</h2>
-          <img class="slide__image" src="img/slider_3.png" width="260" height="419" alt="Девушка с весами в одной руке ест яблоко">
+        <li class="slider__item">
+          <input class="visually-hidden" type="radio" name="slider" value="2">
+          <label class="slider__slide-label slider__slide-label slider__slide-label--third">
+            Безопасные лакомства
+          </label>
+          <img class="slider__slide-image" src="img/slider_3.png" width="260" height="419" alt="Девушка с весами в одной руке ест яблоко">
         </li>
       </ul>
       <button class="slider__control slider__control--left slider-control slider-control--left">
@@ -68,10 +80,13 @@
         <li class="benefits__item">Повышение иммунитета</li>
         <li class="benefits__item">Поддержание фигуры</li>
         <li class="benefits__item">Отстутствие вредных компонентов </li>
-        <li class="benefits__item">Снижение нагрузки<br> на органы пищеварения</li>
+        <li class="benefits__item">Снижение нагрузки <br> на органы пищеварения</li>
       </ul>
       <figure class="benefits__image-wrapper">
-        <img class="benefits__image" src="img/benefits_image.png" width="320" height="310"  alt="">
+        <picture>
+          <source srcset="img/benefits_image_tablet.png" media="(min-width: 768px)">
+          <img class="benefits__image" src="img/benefits_image.png" width="320" height="310"  alt="">
+        </picture>
         <figcaption class="benefits__caption">
           <p class="benefits__author">Иванова Надежда Александровна</p>
           <p class="benefits__occupation">Сертифицированный диетолог</p>
@@ -80,13 +95,16 @@
     </section>
     <section class="infinity-slider page__infinity-slider">
       <h2 class="infinity-slider__title">
-        Обязательные продукты
+        Обязательные продукты <br>
         для здорового питания:
       </h2>
       <ul class="infinity-slider__list">
         <li class="infinity-slider__item inf-slider-item inf-slider-item--active">
           <h3 class="inf-slider-item__title">Мясо</h3>
-          <img class="inf-slider-item__image" src="img/infinity-slider_1-mobile.jpg" width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
+          <picture>
+            <source srcset="img/infinity-slider_1_tablet.jpg" media="(min-width: 768px)">
+            <img class="inf-slider-item__image" src="img/infinity-slider_1_mobile.jpg" width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
+          </picture>
           <p class="inf-slider-item__desc">
             Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в тушеном, запеченном или вареном виде.
           </p>
@@ -106,10 +124,10 @@
           </p>
         </li>
       </ul>
-      <button class="infinity-slider__control infinity-slider__control--left slider-control slider-control--left slider-control--mobile-left">
+      <button class="infinity-slider__control infinity-slider__control--left      slider-control slider-control--left slider-control--mobile">
         <span class="visually-hidden">Влево</span>
       </button>
-      <button class="infinity-slider__control infinity-slider__control--right slider-control slider-control--right slider-control--mobile-right">
+      <button class="infinity-slider__control infinity-slider__control--right     slider-control slider-control--right slider-control--mobile">
         <span class="visually-hidden">Вправо</span>
       </button>
     </section>
@@ -128,15 +146,15 @@
         </div>
         <div class="features__item feature feature--balance">
           <dt class="feature__name">Сбалансированность:</dt>
-          <dd class="feature__desc">наши блюда составляют ведущие диетологи по уникальной рецептуре</dd>
+          <dd class="feature__desc">наши блюда составляют ведущие диетологи <br> по уникальной рецептуре</dd>
         </div>
-        <div class="features__item feature feature--identity">
+        <div class="features__item features__item--identity feature feature--identity">
           <dt class="feature__name">Индивидуальность:</dt>
-          <dd class="feature__desc">для вашего выбора мы предоставляем большое кол-во вариантов блюд</dd>
+          <dd class="feature__desc">для вашего выбора мы предоставляем большое <br> кол-во вариантов блюд</dd>
         </div>
         <div class="features__item feature feature--health">
           <dt class="feature__name">Польза:</dt>
-          <dd class="feature__desc"> питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка </dd>
+          <dd class="feature__desc">питаясь нашими продуктами, Вы можете быть уверены в своем здоровье и здоровье ребенка </dd>
         </div>
       </dl>
     </section>
@@ -146,7 +164,10 @@
         <a class="gallery__link" href="#">Подписывайтесь,</a>
         чтобы быть в курсе последних новостей
       </p>
-      <img class="gallery__image" src="img/gallery_all.png" width="320" alt="Фотографии из инстаграмма">
+      <picture>
+        <source srcset="img/gallery_tablet.png" media="(min-width: 768px">
+        <img class="gallery__image" src="img/gallery_mobile.png" width="320" alt="Фотографии из инстаграмма">
+      </picture>
     </section>
     <section class="order page__order">
       <h2 class="order__title">Хотите получить персональное меню?</h2>

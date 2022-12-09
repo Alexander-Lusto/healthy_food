@@ -27,12 +27,39 @@
   position: absolute;
 
   &--left {
-    top: 301px;
+    top: 297px;
     left: 2.5px;
   }
 
   &--right {
-    top: 301px;
+    top: 297px;
     right: 2.5px;
+  }
+}
+
+@media(min-width: 768px) {
+  .infinity-slider {
+    padding: 0;
+  }
+
+  .infinity-slider__title {
+    font-size: 41px;
+    line-height: 118%;
+
+    padding: 0 130px;
+    margin-bottom: 48px;
+  }
+
+  .infinity-slider__control {
+    position: absolute;
+    top: 318px;
+
+    &--left {
+      left: 26px;
+    }
+
+    &--right {
+      right: 26px;
+    }
   }
 }

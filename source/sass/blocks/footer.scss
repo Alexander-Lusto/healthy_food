@@ -48,3 +48,35 @@
     margin-bottom: 22px;
   }
 }
+
+@media(min-width: 768px) {
+  .footer {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 110px;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+  }
+
+  .footer__navigation-item:not(:first-child) {
+    margin-left: 89px;
+  }
+
+  .footer__copyright {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__copyright-link:not(:first-child) {
+    margin-left: 40px;
+  }
+}

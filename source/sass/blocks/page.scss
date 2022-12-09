@@ -3,12 +3,12 @@ html {
 }
 
 .page {
+  width: 768px;
   font-family: 'Lato';
   color: #000000;
 
-  width: 320px;
   margin: 0 auto;
-  background: #FFFFFF url("../../img/background.png") top no-repeat;
+  background: #FFFFFF url("../../img/promo_background.jpg") top no-repeat;
 }
 
 .page__promo {
@@ -31,3 +31,37 @@ html {
   margin-bottom: 78px;
 }
 
+.page__order {
+  margin-top: -167px;
+}
+
+@media(min-width: 768px) {
+  .page__header {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .page__promo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .page__slider {
+    margin: 0 34px 0 100px;
+    margin-bottom: 52px;
+  }
+
+  .page__benefits {
+    margin-bottom: 80px;
+  }
+
+  .page__features {
+    margin-bottom: 187px;
+  }
+
+  .page__order {
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 238px;
+  }
+}

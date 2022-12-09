@@ -23,3 +23,32 @@
   margin: 0;
   margin-bottom: 36px;
 }
+
+.promo__button {
+  margin: 0 auto;
+}
+
+@media(min-width: 768px) {
+  .promo {
+    width: 366px;
+    text-align: center;
+  }
+
+  .promo__title {
+    font-size: 32px;
+    line-height: 34px;
+
+    margin-bottom: 30px;
+  }
+
+  .promo__desc {
+    font-size: 18px;
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .promo__button {
+    margin: 0 auto;
+  }
+}

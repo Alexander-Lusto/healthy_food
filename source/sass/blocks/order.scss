@@ -1,5 +1,4 @@
 .order {
-  margin-top: -92px;
   padding-bottom: 76px;
 }
 
@@ -59,4 +58,40 @@
 .order__submit {
   width: 245px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .order {
+    width: 543px;
+  }
+
+  .order__title {
+    font-size: 41px;
+    margin-bottom: 22px;
+  }
+
+  .order__desc {
+    text-align: left;
+    font-size: 16px;
+
+    padding: 0;
+    margin-bottom: 71px;
+  }
+
+  .order__input {
+    display: block;
+    width: 403px;
+    height: 57px;
+    padding-left: 45px;
+
+    margin: 0 auto;
+
+    &:not(:last-of-type) {
+      margin-bottom: 22px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
 }
