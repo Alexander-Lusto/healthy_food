@@ -18,8 +18,8 @@
 .inf-slider-item__image {
   order: 1;
 
-  width: 225px;
-  height: 261px;
+  //width: 225px;
+  //height: 261px;
 
   margin-bottom: 14px;
 }
@@ -48,14 +48,37 @@
 
 @media(min-width: 768px) {
   .inf-slider-item {
+    display: flex;
     width: 664px;
     padding-bottom: 27px;
   }
 
-  .inf-slider-item__image {
+  .infinity-slider__image-container {
+    overflow: hidden;
     width: 664px;
-    height: 261px;
-    margin-bottom: 25px;
+    height: 262px;
+
+    margin-bottom: 29px;
+  }
+
+  .inf-slider-item__image {
+    position: relative;
+    width: auto;
+    height: auto;
+
+    &--meat {
+      top: -82px;
+    }
+
+    &--chease {
+      top: -44px;
+      left: -8px;
+    }
+
+    &--vegetables {
+      top: 0px;
+      left: -106px;
+    }
   }
 
   .inf-slider-item__title {
@@ -71,5 +94,13 @@
     padding: 0 30px;
 
     margin: 0;
+  }
+}
+
+@media(min-width: 1560px) {
+
+
+  .inf-slider-item__desc {
+    padding: 0 20px;
   }
 }

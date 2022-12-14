@@ -52,3 +52,38 @@
     margin: 0 auto;
   }
 }
+
+@media(min-width: 1560px) {
+  .promo {
+    padding-top: 200px;
+    padding-left: 210px;
+    padding-right: 0;
+    width: 496px;
+  }
+
+  .promo__title {
+    width: 496px;
+    text-align: left;
+    font-size: 50px;
+    line-height: 105.5%;
+
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .promo__desc {
+    width: auto;
+
+    text-align: left;
+    font-size: 23px;
+    line-height: 140%;
+
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  .promo__button {
+    margin: 0;
+
+  }
+}

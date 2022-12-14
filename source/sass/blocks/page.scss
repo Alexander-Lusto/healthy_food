@@ -3,12 +3,12 @@ html {
 }
 
 .page {
-  width: 768px;
+  width: 320px;
   font-family: 'Lato';
   color: #000000;
 
   margin: 0 auto;
-  background: #FFFFFF url("../../img/promo_background.jpg") top no-repeat;
+  background: #FFFFFF url("../../img/background_mobile.png") top no-repeat;
 }
 
 .page__promo {
@@ -36,6 +36,11 @@ html {
 }
 
 @media(min-width: 768px) {
+  .page {
+    width: 768px;
+    background: #FFFFFF url("../../img/background_tablet.png") top no-repeat;
+  }
+
   .page__header {
     margin: 0 auto;
     margin-bottom: 30px;
@@ -63,5 +68,37 @@ html {
     margin: 0 auto;
     margin-top: -50px;
     margin-bottom: 238px;
+  }
+}
+
+@media(min-width: 1560px) {
+  .page {
+    width: 100%;
+    background: #FFFFFF url("../../img/background_pc.png") top no-repeat;
+  }
+
+  .page__slider {
+    margin: 0;
+    margin-bottom: 0px;
+  }
+
+  .page__benefits {
+    margin-bottom: 156px;
+  }
+
+  .page__infinity-slider {
+    margin-bottom: 120px;
+  }
+
+  .page__features {
+    margin-bottom: 340px;
+  }
+
+  .page__gallery {
+    margin-bottom: 23px;
+  }
+
+  .page__order {
+    margin-bottom: 91px;
   }
 }

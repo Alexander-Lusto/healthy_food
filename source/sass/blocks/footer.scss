@@ -80,3 +80,17 @@
     margin-left: 40px;
   }
 }
+
+@media(min-width: 1560px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__inner-content {
+    width: 616px;
+    margin: 0 auto;
+  }
+
+  .footer__navigation-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
