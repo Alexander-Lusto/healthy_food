@@ -48,26 +48,38 @@
               <label class="slider__slide-label slider__slide-label--first slider__slide-label--active">
                 Для беременных
               </label>
-              <picture>
-                <img class="slider__slide-image slider__slide-image--active" src="img/slide-1.png" width="560"
-                  height="auto" alt="Беременная девушка">
-              </picture>
+              <div class="slider__slide-image-container">
+                <picture>
+                  <img class="slider__slide-image slider__slide-image--active" src="img/slide-1.png" width="560"
+                    height="auto" alt="Беременная девушка">
+                </picture>
+              </div>
             </li>
+
             <li class="slider__item">
               <input class="visually-hidden" type="radio" name="slider" value="2">
               <label class="slider__slide-label slider__slide-label--second">
                 Для кормящих
               </label>
-              <img class="slider__slide-image" src="img/slide-2.png" width="260" height="419"
-                alt="Девушка с ребенком на руках">
+              <div class="slider__slide-image-container">
+                <picture>
+                  <img class="slider__slide-image" src="img/slide-2.png" width="260" height="419"
+                  alt="Девушка с ребенком на руках">
+                </picture>
+              </div>
             </li>
+
             <li class="slider__item">
               <input class="visually-hidden" type="radio" name="slider" value="2">
               <label class="slider__slide-label slider__slide-label slider__slide-label--third">
                 Безопасные лакомства
               </label>
-              <img class="slider__slide-image" src="img/slide-3.png" width="260" height="419"
-                alt="Девушка с весами в одной руке ест яблоко">
+              <div class="slider__slide-image-container">
+                <picture>
+                  <img class="slider__slide-image" src="img/slide-3.png" width="260" height="419"
+                  alt="Девушка с весами в одной руке ест яблоко">
+                </picture>
+              </div>
             </li>
           </ul>
           <button class="slider__control slider__control--left slider-control slider-control--left">
@@ -113,60 +125,12 @@
       </h2>
       <div class="infinity-slider__container">
         <ul class="infinity-slider__list">
-          <li class="infinity-slider__item inf-slider-item">
-            <h3 class="inf-slider-item__title">Овощи</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img/infinity-slider-1_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--vegetables"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
-                  alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
-              </picture>
-            </div>
-            <p class="inf-slider-item__desc">
-              Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
-            </p>
-          </li>
-
           <li class="infinity-slider__item inf-slider-item inf-slider-item--active">
-            <h3 class="inf-slider-item__title">Мясо</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img/infinity-slider-2_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--meat" src="img/infinity-slider_1_mobile.jpg"
-                  width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
-              </picture>
-            </div>
-            <p class="inf-slider-item__desc">
-              Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в
-              тушеном, запеченном или вареном виде.
-            </p>
-          </li>
-
-          <li class="infinity-slider__item inf-slider-item">
-            <h3 class="inf-slider-item__title">Продукты из молока</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img\infinity-slider-3_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--chease"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
-                  alt="Большая головка желтого сыра лежит на деревянной полке">
-              </picture>
-            </div>
-
-            <p class="inf-slider-item__desc">
-              Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно
-              либо через день.
-            </p>
-          </li>
-
-          <li class="infinity-slider__item inf-slider-item">
             <h3 class="inf-slider-item__title">Овощи</h3>
-            <div class="infinity-slider__image-container">
+            <div class="inf-slider-item__image-container">
               <picture>
-                <source srcset="img/infinity-slider-1_pc.jpg" media="(min-width: 768px)">
                 <img class="inf-slider-item__image inf-slider-item__image--vegetables"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
+                  src="img/infinity-slider-1.jpg" width="225" height="261"
                   alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
               </picture>
             </div>
@@ -175,12 +139,11 @@
             </p>
           </li>
 
-          <li class="infinity-slider__item inf-slider-item">
+          <li class="infinity-slider__item inf-slider-item ">
             <h3 class="inf-slider-item__title">Мясо</h3>
-            <div class="infinity-slider__image-container">
+            <div class="inf-slider-item__image-container">
               <picture>
-                <source srcset="img/infinity-slider-2_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--meat" src="img/infinity-slider_1_mobile.jpg"
+                <img class="inf-slider-item__image inf-slider-item__image--meat" src="img/infinity-slider-2.jpg"
                   width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
               </picture>
             </div>
@@ -190,60 +153,12 @@
             </p>
           </li>
 
-          <li class="infinity-slider__item inf-slider-item">
+          <li class="infinity-slider__item inf-slider-item ">
             <h3 class="inf-slider-item__title">Продукты из молока</h3>
-            <div class="infinity-slider__image-container">
+            <div class="inf-slider-item__image-container">
               <picture>
-                <source srcset="img\infinity-slider-3_pc.jpg" media="(min-width: 768px)">
                 <img class="inf-slider-item__image inf-slider-item__image--chease"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
-                  alt="Большая головка желтого сыра лежит на деревянной полке">
-              </picture>
-            </div>
-
-            <p class="inf-slider-item__desc">
-              Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно
-              либо через день.
-            </p>
-          </li>
-
-          <li class="infinity-slider__item inf-slider-item">
-            <h3 class="inf-slider-item__title">Овощи</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img/infinity-slider-1_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--vegetables"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
-                  alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
-              </picture>
-            </div>
-            <p class="inf-slider-item__desc">
-              Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
-            </p>
-          </li>
-
-          <li class="infinity-slider__item inf-slider-item">
-            <h3 class="inf-slider-item__title">Мясо</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img/infinity-slider_1_tablet.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--meat" src="img/infinity-slider_1_mobile.jpg"
-                  width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
-              </picture>
-            </div>
-            <p class="inf-slider-item__desc">
-              Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в
-              тушеном, запеченном или вареном виде.
-            </p>
-          </li>
-
-          <li class="infinity-slider__item inf-slider-item">
-            <h3 class="inf-slider-item__title">Продукты из молока</h3>
-            <div class="infinity-slider__image-container">
-              <picture>
-                <source srcset="img\infinity-slider-3_pc.jpg" media="(min-width: 768px)">
-                <img class="inf-slider-item__image inf-slider-item__image--chease"
-                  src="img/infinity-slider_1-mobile.jpg" width="225" height="261"
+                  src="img/infinity-slider-3.jpg" width="225" height="261"
                   alt="Большая головка желтого сыра лежит на деревянной полке">
               </picture>
             </div>
@@ -300,11 +215,13 @@
         <a class="gallery__link" href="#">Подписывайтесь,</a>
         чтобы быть в курсе последних новостей
       </p>
-      <picture>
-        <source srcset="img/gallery_pc.png" media="(min-width: 1560px)">
-        <source srcset="img/gallery_tablet.png" media="(min-width: 768px">
-        <img class="gallery__image" src="img/gallery_mobile.png" width="320" alt="Фотографии из инстаграмма">
-      </picture>
+      <div class="gallery__image-wrapper">
+        <picture>
+          <source srcset="img/gallery_pc.png" media="(min-width: 1560px)">
+          <source srcset="img/gallery_tablet.png" media="(min-width: 768px">
+          <img class="gallery__image" src="img/gallery_mobile.png" width="320" alt="Фотографии из инстаграмма">
+        </picture>
+      </div>
     </section>
     <section class="order page__order">
       <h2 class="order__title">Хотите получить персональное меню?</h2>

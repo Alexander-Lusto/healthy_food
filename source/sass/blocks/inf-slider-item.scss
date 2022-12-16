@@ -17,13 +17,37 @@
   }
 }
 
-.inf-slider-item__image {
+.inf-slider-item__image-container {
   order: 1;
 
-  //width: 225px;
-  //height: 261px;
-
+  width: 224px;
+  height: 261px;
   margin-bottom: 14px;
+
+  overflow: hidden;
+}
+
+.inf-slider-item__image {
+  position: relative;
+  width: 464px;
+  height: auto;
+
+  &--meat {
+    top: 0px;
+    left: -90px;
+  }
+
+  &--chease {
+    top: 0px;
+    left: -90px;
+  }
+
+  &--vegetables {
+    height: 261px;
+    width: auto;
+    top: 0px;
+    left: -250px;
+  }
 }
 
 .inf-slider-item__title {

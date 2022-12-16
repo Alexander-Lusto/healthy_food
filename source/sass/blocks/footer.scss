@@ -1,6 +1,11 @@
 .footer {
   background-color: #27AE60;
   padding: 40px 20px;
+
+
+  @media(min-width: 400px) and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .footer__logo {
@@ -48,6 +53,7 @@
     margin-bottom: 22px;
   }
 }
+
 
 @media(min-width: 768px) {
   .footer {

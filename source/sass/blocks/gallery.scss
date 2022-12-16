@@ -31,12 +31,21 @@
   border-bottom: 1px solid black;
 }
 
+.gallery__image-wrapper {
+  width: 100%;
+}
+
 .gallery__image {
   position: relative;
   left: -236px;
   top: -75px;
-  width: 986px;
+  width: 985px;
   height: auto;
+  height: auto;
+
+  @media(min-width: 600px) and (max-width: 767px){
+    left: -125px;
+  }
 }
 
 @media(min-width: 768px) {

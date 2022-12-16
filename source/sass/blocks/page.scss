@@ -1,13 +1,15 @@
 html {
   background-color: #000000;
+
 }
 
 .page {
   font-family: 'Lato';
   color: #000000;
-
-  margin: 0 auto;
   background: #FFFFFF url("../../img/background_mobile.png") top no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  min-width: 320px;
 }
 
 .page__promo {

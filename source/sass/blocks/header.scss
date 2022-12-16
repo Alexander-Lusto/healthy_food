@@ -4,6 +4,13 @@
   align-items: center;
 
   padding: 38px 15px;
+
+
+  @media(min-width: 550px) and (max-width: 767px){
+    box-sizing: border-box;
+    width: 500px;
+    margin: 0 auto;
+  }
 }
 
 .header__navigation {
@@ -64,6 +71,7 @@
   .header {
     justify-content: flex-start;
     align-items: flex-start;
+
 
     width: 520px;
     padding: 45px 138px 45px 110px;
