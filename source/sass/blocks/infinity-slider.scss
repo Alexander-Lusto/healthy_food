@@ -82,6 +82,12 @@
 }
 
 @media(min-width: 1560px) {
+  .infinity-slider {
+    padding-bottom:50px;
+    padding-top: 156px;
+    background: url("../../img/pattern-infinity-slider.png") left top no-repeat;
+  }
+
   .infinity-slider__container {
     max-width: 100%;
     //left: -72px;

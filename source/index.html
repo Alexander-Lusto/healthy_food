@@ -30,7 +30,7 @@
     <button class="header__open-menu-button"></button>
     <button class="header__close-menu-button"></button>
   </header>
-  <main class="content">
+  <main class="content page__content">
     <section class="banner page__bunner">
       <div class="banner__inner">
         <div class="promo page__promo">
@@ -82,26 +82,28 @@
     <section class="benefits page__benefits">
       <div class="benefits__inner-content inner-content">
         <div class="benefits__flex-container">
-          <h2 class="benefits__title">Почему Вам нужно правильно питаться?</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item">Здоровый ребенок</li>
-            <li class="benefits__item">Повышение иммунитета</li>
-            <li class="benefits__item">Поддержание фигуры</li>
-            <li class="benefits__item">Отстутствие вредных компонентов </li>
-            <li class="benefits__item">Снижение нагрузки <br> на органы пищеварения</li>
-          </ul>
+          <div class="benefits__text-wrapper">
+            <h2 class="benefits__title">Почему Вам нужно правильно питаться?</h2>
+            <ul class="benefits__list">
+              <li class="benefits__item">Здоровый ребенок</li>
+              <li class="benefits__item">Повышение иммунитета</li>
+              <li class="benefits__item">Поддержание фигуры</li>
+              <li class="benefits__item">Отстутствие вредных компонентов </li>
+              <li class="benefits__item">Снижение нагрузки <br> на органы пищеварения</li>
+            </ul>
+          </div>
+          <figure class="benefits__image-wrapper">
+            <picture>
+              <source srcset="img/benefits_image_pc.png" media="(min-width: 1560px)">
+              <source srcset="img/benefits_image_tablet.png" media="(min-width: 768px)">
+              <img class="benefits__image" src="img/benefits_image.png" width="320" height="310" alt="">
+            </picture>
+            <figcaption class="benefits__caption">
+              <p class="benefits__author">Иванова Надежда Александровна</p>
+              <p class="benefits__occupation">Сертифицированный диетолог</p>
+            </figcaption>
+          </figure>
         </div>
-        <figure class="benefits__image-wrapper">
-          <picture>
-            <source srcset="img/benefits_image_pc.png" media="(min-width: 1560px)">
-            <source srcset="img/benefits_image_tablet.png" media="(min-width: 768px)">
-            <img class="benefits__image" src="img/benefits_image.png" width="320" height="310" alt="">
-          </picture>
-          <figcaption class="benefits__caption">
-            <p class="benefits__author">Иванова Надежда Александровна</p>
-            <p class="benefits__occupation">Сертифицированный диетолог</p>
-          </figcaption>
-        </figure>
       </div>
     </section>
     <section class="infinity-slider page__infinity-slider">

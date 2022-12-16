@@ -3,7 +3,6 @@ html {
 }
 
 .page {
-  width: 320px;
   font-family: 'Lato';
   color: #000000;
 
@@ -37,7 +36,6 @@ html {
 
 @media(min-width: 768px) {
   .page {
-    width: 768px;
     background: #FFFFFF url("../../img/background_tablet.png") top no-repeat;
   }
 
@@ -75,6 +73,7 @@ html {
   .page {
     width: 100%;
     background: #FFFFFF url("../../img/background_pc.png") top no-repeat;
+    background-size: 100% auto;
   }
 
   .page__slider {
@@ -84,14 +83,18 @@ html {
 
   .page__benefits {
     margin-bottom: 156px;
+    margin: 0;
   }
 
   .page__infinity-slider {
-    margin-bottom: 120px;
+    z-index: 2;
+    margin: 0;
+    //margin-bottom: 40px;
   }
 
   .page__features {
-    margin-bottom: 340px;
+    z-index: 1;
+    margin-bottom: 40px;
   }
 
   .page__gallery {
@@ -99,6 +102,11 @@ html {
   }
 
   .page__order {
-    margin-bottom: 91px;
+    margin-bottom: 0;
+  }
+
+  .page__content {
+    background: url("../../img/pattern-main_pc.png") bottom right no-repeat;
+    padding-bottom: 91px;
   }
 }
