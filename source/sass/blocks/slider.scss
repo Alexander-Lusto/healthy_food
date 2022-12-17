@@ -72,6 +72,12 @@
   .slider {
     height: 624px;
 
+    width: 633px;
+    padding-left: 67px;
+    margin-left: auto;
+    margin-right: auto;
+
+
     &::before {
       content: "";
       position: absolute;
@@ -214,18 +220,19 @@
 
 @media(min-width: 1560px) {
   .slider {
+    padding: 0;
     padding-top: 10px;
     width: 863px;
 
 
     &::before {
       top: 105px;
-      right: 167px;
+      right: 175px;
     }
 
     &::after {
-      top: 146px;
-      right: 209px;
+      top: 148px;
+      right: 217px;
     }
   }
 
@@ -236,12 +243,12 @@
     }
 
     &--second {
-      left: 47px;
+      left: 45px;
       top: 340px;
     }
 
     &--third {
-      left: 55px;
+      left: 53px;
       top: 498px;
     }
   }

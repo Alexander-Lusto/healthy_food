@@ -56,19 +56,36 @@
     padding-top: 900px;
     padding-left: 90px;
 
-    background-size: 1100px auto;
-    background-position: top 100px left -115px;
+    background-size: 1100px auto, 100% auto;
+    background-position: top 100px left -115px, center;
+
+    @media(min-width: 900px) and (max-width: 1559px){
+      background-position: top 100px center, center;
+    }
   }
 
   .features__tittle {
     font-size: 41px;
 
     margin-bottom: 85px;
+
+    @media(min-width: 900px) and (max-width: 1559px){
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
   }
 
   .features__list {
     padding-right: 0;
     width: 556px;
+
+    @media(min-width: 900px) and (max-width: 1559px){
+      width: 800px;
+      margin: 0 auto;
+    }
   }
 
   .features__item {

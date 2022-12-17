@@ -60,13 +60,39 @@
     font-size: 16px;
 
     padding: 0 167px;
+
+    @media(min-width: 900px) and (max-width: 1559px){
+      text-align: center;
+    }
+  }
+
+  .gallery__image-wrapper {
+
+    @media(min-width: 1250px) and (max-width: 1559px){
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .gallery__image {
     width: 1393px;
     height: 816px;
+
     top: -35px;
     left: -290px;
+
+    @media(min-width: 970px) and (max-width: 1200px){
+      left: -100px;
+    }
+
+    @media(min-width: 1200px) and (max-width: 1400px){
+      left: -50px;
+    }
+
+    @media(min-width: 1250px) and (max-width: 1559px){
+      position: static;
+    }
   }
 }
 

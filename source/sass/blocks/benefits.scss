@@ -123,12 +123,21 @@
     padding-left: 140px;
     padding-right: 150px;
     margin-bottom: 40px;
+
+    @media(min-width: 1300px) and (max-width: 1559px) {
+      text-align: center;
+    }
   }
 
   .benefits__list {
     padding-left: 170px;
     padding-right: 150px;
     margin-bottom: 0;
+
+    @media(min-width: 1300px) and (max-width: 1559px) {
+      margin: 0 auto;
+      width: 750px;
+    }
   }
 
   .benefits__item br {

@@ -79,7 +79,7 @@
     padding-bottom: 27px;
   }
 
-  .infinity-slider__image-container {
+  .inf-slider-item__image-container {
     overflow: hidden;
     width: 664px;
     height: 262px;
@@ -89,10 +89,11 @@
 
   .inf-slider-item__image {
     position: relative;
-    width: auto;
+    width: 664px;
     height: auto;
 
     &--meat {
+      left: auto;
       top: -82px;
     }
 
@@ -103,7 +104,8 @@
 
     &--vegetables {
       top: 0px;
-      left: -106px;
+      // left: -106px;
+      left: 0;
     }
   }
 
@@ -124,8 +126,6 @@
 }
 
 @media(min-width: 1560px) {
-
-
   .inf-slider-item__desc {
     padding: 0 20px;
   }
