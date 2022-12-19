@@ -98,8 +98,14 @@
 
 @media(min-width: 1560px) {
   .gallery {
-    background: url("../../img/pattern-gallery_pc.png") left top 150px no-repeat;
+    background: url("../../img/gallery-pattern_pc.png") left top 150px no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/gallery-pattern_pc@2x.png") left top 150px no-repeat;
+      background-size: contain;
+    }
   }
+
   .gallery__title {
     margin-bottom: 10px;
   }

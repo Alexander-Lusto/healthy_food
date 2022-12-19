@@ -10,6 +10,7 @@
     "clean": "gulp clean",
     "images": "gulp optimizeImages",
     "styles": "gulp styles",
+    "copyWebp": "gulp copyWebp",
     "html": "gulp minifyHTML",
     "start": "gulp"
   },

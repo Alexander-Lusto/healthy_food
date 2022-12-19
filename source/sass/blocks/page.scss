@@ -6,10 +6,15 @@ html {
 .page {
   font-family: 'Lato';
   color: #000000;
-  background: #FFFFFF url("../../img/background_mobile.png") top no-repeat;
+  background: #FFFFFF url("../../img/page-background_mobile.jpg") top no-repeat;
   background-size: 100% auto;
   margin: 0 auto;
   min-width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background: #FFFFFF url("../../img/page-background_mobile@2x.jpg") top no-repeat;
+    background-size: 100% auto;
+  }
 }
 
 .page__promo {
@@ -21,7 +26,7 @@ html {
 }
 
 .page__benefits {
-  margin-bottom: 65px;
+  margin-bottom: 68px;
 }
 
 .page__infinity-slider {
@@ -38,8 +43,13 @@ html {
 
 @media(min-width: 768px) {
   .page {
-    background: #FFFFFF url("../../img/background_tablet.png") top no-repeat;
+    background: #FFFFFF url("../../img/page-background_tablet.jpg") top no-repeat;
     background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background: #FFFFFF url("../../img/page-background_tablet@2x.jpg") top no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   .page__header {
@@ -74,8 +84,13 @@ html {
 
 @media(min-width: 1560px) {
   .page {
-    background: #FFFFFF url("../../img/background_pc.png") top no-repeat;
+    background: #FFFFFF url("../../img/page-background_pc.jpg") top no-repeat;
     background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background: #FFFFFF url("../../img/page-background_pc@2x.jpg") top no-repeat;
+      background-size: 100% auto;
+    }
   }
 
   .page__slider {
@@ -108,7 +123,12 @@ html {
   }
 
   .page__content {
-    background: url("../../img/pattern-main_pc.png") bottom right no-repeat;
+    background: url("../../img/content-pattern_pc.png") bottom right no-repeat;
     padding-bottom: 91px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/content-pattern_pc@2x.png") bottom right no-repeat;
+      background-size: 50%;
+    }
   }
 }

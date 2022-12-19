@@ -170,11 +170,6 @@
     padding: 0;
     padding-top: 290px;
     background-image: none;
-    /* background:
-      url("../../img/benefits_circles-2.svg") left -200px top -200px no-repeat,
-      url("../../img/benefits_circles.svg") right -228px bottom -252px no-repeat,
-      url("../../img/benefits-background_pc.png") right bottom no-repeat,
-      linear-gradient(to bottom, #FFFFFF 290px, #27AE60 290px); */
   }
 
   .benefits__inner-content {
@@ -182,8 +177,6 @@
     background:
       url("../../img/benefits_circles.svg") left -200px top -240px no-repeat,
       url("../../img/benefits_circles.svg") right -224px bottom -252px no-repeat,
-      /* linear-gradient(79.46deg, #27AE60 8.32%, rgba(255, 255, 255, 0) 82.9%),
-      url("../../img/benefits-background_pc.png") right center no-repeat, */
       #27AE60;
   }
 
@@ -195,8 +188,13 @@
     right: 0;
     height: 100%;
     width: 25%;
-    background: linear-gradient(79.46deg, #27AE60 8.32%, rgba(255, 255, 255, 0) 82.9%), url("../../img/pattern-proper-diet.png");
+    background: linear-gradient(79.46deg, #27AE60 8.32%, rgba(255, 255, 255, 0) 82.9%), url("../../img/benefits-pattern_pc.png");
     opacity: 0.1;
+
+    @media (min-resolution: 2dppx) {
+      background: linear-gradient(79.46deg, #27AE60 8.32%, rgba(255, 255, 255, 0) 82.9%), url("../../img/benefits-pattern_pc@2x.png");
+      background-size: contain;
+    }
   }
 
   .benefits__flex-container {

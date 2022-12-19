@@ -90,7 +90,12 @@
   .infinity-slider {
     padding-bottom:50px;
     padding-top: 156px;
-    background: url("../../img/pattern-infinity-slider.png") left top no-repeat;
+    background: url("../../img/infinity-slider-pattern.png") left top no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/infinity-slider-pattern@2x.png") left top no-repeat;
+      background-size: contain;
+    }
   }
 
   .infinity-slider__container {

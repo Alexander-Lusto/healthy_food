@@ -50,8 +50,9 @@
               </label>
               <div class="slider__slide-image-container">
                 <picture>
+                  <source type="image/webp" srcset="img/slide-1.webp, img/slide-1_@2x.webp 2x">
                   <img class="slider__slide-image slider__slide-image--active" src="img/slide-1.png" width="560"
-                    height="auto" alt="Беременная девушка">
+                    srcset="img/slide-1_@2x.png 2x" height="auto" alt="Беременная девушка">
                 </picture>
               </div>
             </li>
@@ -63,8 +64,9 @@
               </label>
               <div class="slider__slide-image-container">
                 <picture>
+                  <source type="image/webp" srcset="img/slide-2.webp, img/slide-2_@2x.webp 2x">
                   <img class="slider__slide-image" src="img/slide-2.png" width="260" height="419"
-                  alt="Девушка с ребенком на руках">
+                    srcset="img/slide-2_@2x.png 2x" height="auto" alt="Девушка с ребенком на руках">
                 </picture>
               </div>
             </li>
@@ -76,8 +78,9 @@
               </label>
               <div class="slider__slide-image-container">
                 <picture>
+                  <source type="image/webp" srcset="img/slide-3.webp, img/slide-3_@2x.webp 2x">
                   <img class="slider__slide-image" src="img/slide-3.png" width="260" height="419"
-                  alt="Девушка с весами в одной руке ест яблоко">
+                    srcset="img/slide-3_@2x.png 2x" height="auto" alt="Девушка с весами в одной руке ест яблоко">
                 </picture>
               </div>
             </li>
@@ -106,9 +109,14 @@
           </div>
           <figure class="benefits__image-wrapper">
             <picture>
-              <source srcset="img/benefits_image_pc.png" media="(min-width: 1560px)">
-              <source srcset="img/benefits_image_tablet.png" media="(min-width: 768px)">
-              <img class="benefits__image" src="img/benefits_image.png" width="320" height="310" alt="">
+              <source type="image/webp" srcset="img/benefits-image_pc.webp, img/benefits-image_pc@2x.webp 2x"
+                media="(min-width: 1560px)">
+
+              <source srcset="img/benefits-image_pc.png img/benefits-image_pc2@x.png" media="(min-width: 1560px)">
+              <source srcset="img/benefits-image_tablet.png, img/benefits-image_tablet@2x.png"
+                media="(min-width: 768px)">
+              <img class="benefits__image" src="img/benefits-image_mobile.png"
+                srcset="img/benefits-image_mobile@2x.png 2x" width="320" height="310" alt="">
             </picture>
             <figcaption class="benefits__caption">
               <p class="benefits__author">Иванова Надежда Александровна</p>
@@ -125,45 +133,49 @@
       </h2>
       <div class="infinity-slider__container">
         <ul class="infinity-slider__list">
-          <li class="infinity-slider__item inf-slider-item ">
-            <h3 class="inf-slider-item__title">Овощи</h3>
-            <div class="inf-slider-item__image-container">
+          <li class="infinity-slider__item infinity-slider-item ">
+            <h3 class="infinity-slider-item__title">Овощи</h3>
+            <div class="infinity-slider-item__image-container">
               <picture>
-                <img class="inf-slider-item__image inf-slider-item__image--vegetables"
-                  src="img/infinity-slider-1.jpg" width="225" height="261"
+                <source type="image/webp" srcset="img/infinity-slider-1.webp, img/infinity-slidier-1_@2x.webp 2x">
+                <img class="infinity-slider-item__image infinity-slider-item__image--vegetables"
+                  src="img/infinity-slider-1.jpg" srcset="img/infinity-slider-1_@2x.jpg 2x" width="225" height="261"
                   alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
               </picture>
             </div>
-            <p class="inf-slider-item__desc">
+            <p class="infinity-slider-item__desc">
               Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
             </p>
           </li>
 
-          <li class="infinity-slider__item inf-slider-item inf-slider-item--active">
-            <h3 class="inf-slider-item__title">Мясо</h3>
-            <div class="inf-slider-item__image-container">
+          <li class="infinity-slider__item infinity-slider-item infinity-slider-item--active">
+            <h3 class="infinity-slider-item__title">Мясо</h3>
+            <div class="infinity-slider-item__image-container">
               <picture>
-                <img class="inf-slider-item__image inf-slider-item__image--meat" src="img/infinity-slider-2.jpg"
-                  width="225" height="261" alt="Освежеванная тушка кролика лежит в листьях салата">
+                <source type="image/webp" srcset="img/infinity-slider-2.webp, img/infinity-slider-2_@2x.webp 2x">
+                <img class="infinity-slider-item__image infinity-slider-item__image--meat"
+                  src="img/infinity-slider-2.jpg" srcset="img/infinity-slider-2_@2x.jpg 2x" width="225" height="261"
+                  alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
               </picture>
             </div>
-            <p class="inf-slider-item__desc">
+            <p class="infinity-slider-item__desc">
               Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в
               тушеном, запеченном или вареном виде.
             </p>
           </li>
 
-          <li class="infinity-slider__item inf-slider-item ">
-            <h3 class="inf-slider-item__title">Продукты из молока</h3>
-            <div class="inf-slider-item__image-container">
+          <li class="infinity-slider__item infinity-slider-item ">
+            <h3 class="infinity-slider-item__title">Продукты из молока</h3>
+            <div class="infinity-slider-item__image-container">
               <picture>
-                <img class="inf-slider-item__image inf-slider-item__image--chease"
-                  src="img/infinity-slider-3.jpg" width="225" height="261"
-                  alt="Большая головка желтого сыра лежит на деревянной полке">
+                <source type="image/webp" srcset="img/infinity-slider-3.webp, img/infinity-slider-3_@2x.webp 2x">
+                <img class="infinity-slider-item__image infinity-slider-item__image--milk"
+                  src="img/infinity-slider-3.jpg" srcset="img/infinity-slider-3_@2x.jpg 2x" width="225" height="261"
+                  alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
               </picture>
             </div>
 
-            <p class="inf-slider-item__desc">
+            <p class="infinity-slider-item__desc">
               Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно
               либо через день.
             </p>
@@ -185,9 +197,6 @@
           Почему мамы <br>
           выбирают нашу доставку?
         </h2>
-        <!-- <div class="features__image-container">
-          <img class="features__image" src="img/advantage-girls.png" width="320" alt="Мать катает на спине свою дочь">
-        </div> -->
         <dl class="features__list">
           <div class="features__item feature feature--eco">
             <dt class="feature__name">Экологичность:</dt>
@@ -217,9 +226,12 @@
       </p>
       <div class="gallery__image-wrapper">
         <picture>
-          <source srcset="img/gallery_pc.png" media="(min-width: 1560px)">
-          <source srcset="img/gallery_tablet.png" media="(min-width: 768px">
-          <img class="gallery__image" src="img/gallery_mobile.png" width="320" alt="Фотографии из инстаграмма">
+          <source type="image/webp" srcset="img/gallery_pc.webp, img/gallery_pc@2x.webp 2x" media="(min-width: 1560px)">
+
+          <source srcset="img/gallery_pc.png img/gallery_pc@2x.png 2x" media="(min-width: 1560px)">
+          <source srcset="img/gallery_tablet.png, img/gallery_tablet@2x.png 2x" media="(min-width: 768px)">
+          <img class="gallery__image" src="img/gallery_mobile.png" srcset="img/gallery_mobile@2x.png 2x" width="320"
+            alt="Фотографии из инстаграмма">
         </picture>
       </div>
     </section>
@@ -258,4 +270,5 @@
     </div>
   </footer>
 </body>
+
 </html>

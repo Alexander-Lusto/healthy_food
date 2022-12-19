@@ -53,6 +53,13 @@ const optimizeImages = () => (
 );
 export { optimizeImages };
 
+// webp
+const copyWebp = async () => {
+  gulp.src('source/img/**/*.webp')
+    .pipe(gulp.dest('build/img'))
+}
+export { copyWebp };
+
 //server
 const server = (done) => {
   sync.init({
@@ -99,6 +106,7 @@ const build = gulp.series(
   clean,
   gulp.parallel(
     copyFonts,
+    copyWebp,
     styles,
     minifyHTML,
     optimizeImages)
