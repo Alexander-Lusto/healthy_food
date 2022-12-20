@@ -10,20 +10,20 @@
 </head>
 
 <body class="page">
-  <header class="header page__header">
-    <a class="header__logo" href="">
+  <header class="header page__header" id="header">
+    <a class="header__logo">
       Здоровая мама
     </a>
     <nav class="header__navigation">
       <ul class="header__navigation-list">
         <li class="header__navigation-item">
-          <a class="header__navigation-link header__navigation-link--active" href="#">Важность правильного питания</a>
+          <a class="header__navigation-link header__navigation-link--active" href="#benefits">Важность правильного питания</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="#">Почему мы?</a>
+          <a class="header__navigation-link" href="#features">Почему мы?</a>
         </li>
         <li class="header__navigation-item">
-          <a class="header__navigation-link" href="#">Где заказать?</a>
+          <a class="header__navigation-link" href="#order">Где заказать?</a>
         </li>
       </ul>
     </nav>
@@ -39,62 +39,62 @@
             Правильный и вкусный рацион <br>
             для Вас и вашего ребенка
           </p>
-          <button class="promo__button button">Оформить заказ</button>
+          <a class="promo__button button" href="#order-form">Оформить заказ</a>
         </div>
         <div class="slider page__slider">
           <ul class="slider__list">
-            <li class="slider__item  slider__item--current">
-              <input class="visually-hidden" type="radio" name="slider" value="1">
-              <label class="slider__slide-label slider__slide-label--first slider__slide-label--active">
-                Для беременных
+            <li class="slider__item slider__item--current" data-mobile-order="2">
+              <input id="pregnant" class="slider__slide-input visually-hidden" type="radio" name="slider" value="1" tabindex="-1" checked>
+              <label for="pregnant" class="slider__slide-label slider__slide-label--first" tabindex="0">
+                <span>Для беременных</span>
               </label>
               <div class="slider__slide-image-container">
                 <picture>
                   <source type="image/webp" srcset="img/slide-1.webp, img/slide-1_@2x.webp 2x">
-                  <img class="slider__slide-image slider__slide-image--active" src="img/slide-1.png" width="560"
+                  <img class="slider__slide-image slider__slide-image--second slider__slide-image--main" src="img/slide-1.png" width="560"
                     srcset="img/slide-1_@2x.png 2x" height="auto" alt="Беременная девушка">
                 </picture>
               </div>
             </li>
 
-            <li class="slider__item">
-              <input class="visually-hidden" type="radio" name="slider" value="2">
-              <label class="slider__slide-label slider__slide-label--second">
-                Для кормящих
+            <li class="slider__item"  data-mobile-order="1">
+              <input id="nourish" class="slider__slide-input visually-hidden" type="radio" name="slider" value="0" tabindex="-1">
+              <label for="nourish" class="slider__slide-label slider__slide-label--second"  tabindex="0">
+                <span>Для <br> кормящих</span>
               </label>
               <div class="slider__slide-image-container">
                 <picture>
                   <source type="image/webp" srcset="img/slide-2.webp, img/slide-2_@2x.webp 2x">
-                  <img class="slider__slide-image" src="img/slide-2.png" width="260" height="419"
+                  <img class="slider__slide-image slider__slide-image--first" src="img/slide-2.png" width="260" height="419"
                     srcset="img/slide-2_@2x.png 2x" height="auto" alt="Девушка с ребенком на руках">
                 </picture>
               </div>
             </li>
 
-            <li class="slider__item">
-              <input class="visually-hidden" type="radio" name="slider" value="2">
-              <label class="slider__slide-label slider__slide-label slider__slide-label--third">
-                Безопасные лакомства
+            <li class="slider__item" data-mobile-order="3">
+              <input id="safe-food" class="slider__slide-input visually-hidden" type="radio" name="slider" value="2" tabindex="-1">
+              <label for="safe-food" class="slider__slide-label slider__slide-label--third"  tabindex="0">
+                <span>Безопасные <br> лакомства</span>
               </label>
               <div class="slider__slide-image-container">
                 <picture>
                   <source type="image/webp" srcset="img/slide-3.webp, img/slide-3_@2x.webp 2x">
-                  <img class="slider__slide-image" src="img/slide-3.png" width="260" height="419"
+                  <img class="slider__slide-image slider__slide-image--third" src="img/slide-3.png" width="260" height="419"
                     srcset="img/slide-3_@2x.png 2x" height="auto" alt="Девушка с весами в одной руке ест яблоко">
                 </picture>
               </div>
             </li>
           </ul>
-          <button class="slider__control slider__control--left slider-control slider-control--left">
-            <span class="visually-hidden">Влево</span>
+          <button class="slider__control slider__control--left slider-control slider-control--left slider-control--disabled">
+            <span class="visually-hidden">Левый слайд</span>
           </button>
           <button class="slider__control slider__control--right slider-control slider-control--right">
-            <span class="visually-hidden">Вправо</span>
+            <span class="visually-hidden">Правый слайд</span>
           </button>
         </div>
       </div>
     </section>
-    <section class="benefits page__benefits">
+    <section class="benefits page__benefits" id="benefits">
       <div class="benefits__inner-content inner-content">
         <div class="benefits__flex-container">
           <div class="benefits__text-wrapper">
@@ -183,15 +183,15 @@
         </ul>
         <button
           class="infinity-slider__control infinity-slider__control--left      slider-control slider-control--left slider-control--mobile">
-          <span class="visually-hidden">Влево</span>
+          <span class="visually-hidden">Левый слайд</span>
         </button>
         <button
           class="infinity-slider__control infinity-slider__control--right     slider-control slider-control--right slider-control--mobile">
-          <span class="visually-hidden">Вправо</span>
+          <span class="visually-hidden">Правый слайд</span>
         </button>
       </div>
     </section>
-    <section class="features page__features">
+    <section class="features page__features" id="features">
       <div class="features__inner">
         <h2 class="features__tittle">
           Почему мамы <br>
@@ -221,7 +221,7 @@
     <section class="gallery page__gallery">
       <h2 class="gallery__title">Наш Instagram</h2>
       <p class="gallery__desc">
-        <a class="gallery__link" href="#">Подписывайтесь,</a>
+        <a class="gallery__link" href="#" aria-label="Подписка на инстаграмм">Подписывайтесь,</a>
         чтобы быть в курсе последних новостей
       </p>
       <div class="gallery__image-wrapper">
@@ -235,10 +235,10 @@
         </picture>
       </div>
     </section>
-    <section class="order page__order">
+    <section class="order page__order" id="order">
       <h2 class="order__title">Хотите получить персональное меню?</h2>
       <p class="order__desc">Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
-      <form class="order__form">
+      <form class="order__form" id="order-form">
         <input class="order__input input" name="user-name" type="text" placeholder="Ваше имя">
         <input class="order__input input" name="user-phone" type="tel" placeholder="Ваш телефон">
         <button class="order__submit button" type="submit">Оформить заказ</button>
@@ -247,19 +247,19 @@
   </main>
   <footer class="footer">
     <div class="footer__inner-content">
-      <a class="footer__logo logo" href="#">
+      <a class="footer__logo logo" href="#header">
         Здоровая мама
       </a>
       <nav class="footer__navigation">
         <ul class="footer__navigation-list">
           <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">Важность правильного питания</a>
+            <a class="footer__navigation-link" href="#benefits">Важность правильного питания</a>
           </li>
           <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">Почему мы?</a>
+            <a class="footer__navigation-link" href="#features">Почему мы?</a>
           </li>
           <li class="footer__navigation-item">
-            <a class="footer__navigation-link" href="#">Где заказать?</a>
+            <a class="footer__navigation-link" href="#order">Где заказать?</a>
           </li>
         </ul>
       </nav>
@@ -269,6 +269,8 @@
       </div>
     </div>
   </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/slider.js"></script>
 </body>
 
 </html>

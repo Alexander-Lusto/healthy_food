@@ -14,6 +14,7 @@ import mozjpeg from 'imagemin-mozjpeg';
 import optipng from 'imagemin-optipng';
 import svgo from 'imagemin-svgo';
 import {deleteSync, deleteAsync} from 'del';
+import uglify from 'gulp-uglify';
 
 const sass = gulpSass(scss);
 
