@@ -1,10 +1,13 @@
 .slider-control {
-  border: none;
+  box-sizing: border-box;
   width: 33px;
   height: 33px;
   border-radius: 50%;
   background-color: #27AE60;
+  border: 1px solid #27AE60;
   cursor: pointer;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &::before {
     content: "";
@@ -29,8 +32,37 @@
     transform: rotate(-45deg);
   }
 
+  &:hover {
+    border: 1px solid #27AE60;
+    background-color: #FFFFFF;
+
+    &::before {
+      border-color: #27AE60;
+    }
+  }
+
+  &:active {
+    background-color: #27AE60;
+    border: 1px solid #27AE60;
+
+    &::before {
+      border-color: #FFFFFF;
+    }
+  }
+
+  &:disabled {
+    border: 1px solid #27AE60;
+    background-color: transparent;
+    opacity: 0.3;
+
+    &::before {
+      border-color: #27AE60;
+    }
+  }
+
   @media (max-width: 767px) {
     &--mobile {
+      border: none;
       background-color: transparent;
     }
 

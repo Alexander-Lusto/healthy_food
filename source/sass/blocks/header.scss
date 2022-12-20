@@ -6,7 +6,7 @@
   padding: 38px 15px;
 
 
-  @media(min-width: 550px) and (max-width: 767px){
+  @media(min-width: 550px) and (max-width: 767px) {
     box-sizing: border-box;
     width: 500px;
     margin: 0 auto;
@@ -39,11 +39,17 @@
   line-height: 140%;
   color: #000000;
   text-decoration: none;
+
+  border-bottom: 1px solid transparent;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+
+  &:hover, &:focus {
+    color: #27AE60;
+    border-bottom: 1px solid #F3F3F3;
+  }
 }
 
-.header__navigation-link--active {
-  color: #27AE60;
-}
 
 .header__navigation--opened {
   display: block;
@@ -96,7 +102,8 @@
     flex-wrap: wrap;
   }
 
-  .header__navigation-item { //:not(:first-child) {
+  .header__navigation-item {
+    //:not(:first-child) {
     margin-left: 50px;
   }
 

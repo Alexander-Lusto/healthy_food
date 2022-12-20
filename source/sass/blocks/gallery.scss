@@ -20,6 +20,9 @@
   text-align: center;
   color: #000000;
   padding: 0 17px;
+  position: relative;
+  z-index: 3;
+
 
   margin: 0;
   margin-bottom: 5px;
@@ -29,6 +32,15 @@
   text-decoration: none;
   color: inherit;
   border-bottom: 1px solid black;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+
+
+  &:hover {
+    color: #27AE60;
+    border-bottom: 1px solid #27AE60;
+  }
 }
 
 .gallery__image-wrapper {

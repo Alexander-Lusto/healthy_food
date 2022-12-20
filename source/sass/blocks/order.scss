@@ -40,6 +40,13 @@
   background: #E8F7EE;
   border-radius: 65px;
   border: none;
+  border: 1px solid #E8F7EE;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 
   &::placeholder {
     font-family: inherit;
@@ -54,6 +61,16 @@
 
   &:last-of-type {
     margin-bottom: 19px;
+  }
+
+  &:hover {
+    border: 1px solid #27AE60;
+    background-color: #FFFFFF;
+  }
+
+  &:focus {
+    outline: 0;
+    border: 1px solid #27AE60;
   }
 
   @media(min-width: 450px) and (max-width: 767px){
@@ -99,6 +116,7 @@
     &:last-of-type {
       margin-bottom: 22px;
     }
+
   }
 }
 

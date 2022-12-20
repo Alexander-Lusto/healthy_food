@@ -16,7 +16,14 @@
   line-height: 140%;
   color: #FFFFFF;
 
+  transition-duration: 0.4s;
+  transition-property: color;
+
   margin-bottom: 30px;
+
+  &:hover {
+    color: #000000;
+  }
 }
 
 .footer__navigation-list {
@@ -39,6 +46,15 @@
   line-height: 140%;
   text-align: center;
   color: #FFFFFF;
+  border-bottom: 1px solid transparent;
+
+  transition-duration: 0.3s;
+  transition-property: color, border;
+
+  &:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+  }
 }
 
 .footer__copyright-link {
@@ -47,10 +63,17 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 118%;
-  color: #FFFFFF;
+  color: rgba(#FFFFFF, 0.5);
+
+  transition-duration: 0.3s;
+  transition-property: color;
 
   &:not(:last-child) {
     margin-bottom: 22px;
+  }
+
+  &:hover {
+    color: rgba(#000000, 0.5);
   }
 }
 

@@ -54,7 +54,7 @@ html {
 
   .page__header {
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   .page__promo {
@@ -86,6 +86,7 @@ html {
   .page {
     background: #FFFFFF url("../../img/page-background_pc.jpg") top no-repeat;
     background-size: 100% auto;
+    width: 1920px;
 
     @media (min-resolution: 2dppx) {
       background: #FFFFFF url("../../img/page-background_pc@2x.jpg") top no-repeat;
