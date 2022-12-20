@@ -78,6 +78,7 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', gulp.series(minifyHTML));
+  gulp.watch('source/scripts/*.js').on('change', gulp.series(minifyScripts));
   gulp.watch('source/*.html').on('change', sync.reload);
 }
 
@@ -96,6 +97,14 @@ const copyFonts = async () => {
 }
 export { copyFonts };
 
+// js
+const minifyScripts = async () => {
+  gulp.src('source/scripts/*.js')
+    //.pipe(uglify())
+    .pipe(gulp.dest('build/scripts'))
+  }
+export { minifyScripts };
+
 // clean
 const clean = () => {
   return deleteAsync(['build']);
@@ -110,6 +119,7 @@ const build = gulp.series(
     copyWebp,
     styles,
     minifyHTML,
+    minifyScripts,
     optimizeImages)
 )
 export { build };
