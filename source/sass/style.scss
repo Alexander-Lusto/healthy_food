@@ -1,6 +1,7 @@
 @import "global/font.scss";
 @import "global/visually-hidden.scss";
 @import "blocks/page.scss";
+@import "blocks/mobile-menu-button.scss";
 @import "blocks/header.scss";
 @import "blocks/promo.scss";
 @import "blocks/button.scss";
@@ -15,4 +16,6 @@
 @import "blocks/order.scss";
 @import "blocks/footer.scss";
 @import "blocks/banner.scss";
+@import "blocks/overlay.scss";
+@import "global/hidden.scss";
 

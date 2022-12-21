@@ -1,0 +1,17 @@
+.overlay {
+  display: block;
+}
+
+.overlay--menu-opened {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 30000;
+
+  width: 100%;
+  height: 100vh;
+  background-color: #27AE60;;
+}
