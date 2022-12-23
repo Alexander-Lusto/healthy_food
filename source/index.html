@@ -45,7 +45,7 @@
               Правильный и вкусный рацион <br>
               для Вас и вашего ребенка
             </p>
-            <a class="promo__button button" href="#order-form">Оформить заказ</a>
+            <a class="promo__button button" href="#order">Оформить заказ</a>
           </div>
           <div class="slider page__slider">
             <ul class="slider__list">
@@ -206,9 +206,9 @@
           </button>
         </div>
       </section>
-      <section class="features page__features" id="features">
+      <section class="features page__features">
         <div class="features__inner">
-          <h2 class="features__tittle">
+          <h2 class="features__tittle" id="features">
             Почему мамы <br>
             выбирают нашу доставку?
           </h2>
@@ -236,7 +236,7 @@
       <section class="gallery page__gallery">
         <h2 class="gallery__title">Наш Instagram</h2>
         <p class="gallery__desc">
-          <a class="gallery__link" href="#" aria-label="Подписка на инстаграмм">Подписывайтесь,</a>
+          <a class="gallery__link" href="https://instagram.com" target="_blank" aria-label="Подписка на инстаграмм">Подписывайтесь,</a>
           чтобы быть в курсе последних новостей
         </p>
         <div class="gallery__image-wrapper">
@@ -253,9 +253,9 @@
       <section class="order page__order" id="order">
         <h2 class="order__title">Хотите получить персональное меню?</h2>
         <p class="order__desc">Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
-        <form class="order__form" id="order-form">
-          <input class="order__input input" name="user-name" type="text" placeholder="Ваше имя">
-          <input class="order__input input" name="user-phone" type="tel" placeholder="Ваш телефон">
+        <form class="order__form"  method="post" enctype="multipart/form-data" action="https://echo.htmlacademy.ru">
+          <input class="order__input input" name="user-name" type="text" placeholder="Ваше имя" required>
+          <input class="order__input input" name="user-phone" type="tel" placeholder="Ваш телефон" minlength="6" required>
           <button class="order__submit button" type="submit">Оформить заказ</button>
         </form>
       </section>
@@ -279,14 +279,17 @@
           </ul>
         </nav>
         <div class="footer__copyright">
-          <a class="footer__copyright-link" href="#">Политика конфиденциальности</a>
-          <a class="footer__copyright-link" href="#">Условия онлайн-использования</a>
+          <a class="footer__copyright-link" href="politics.html" target="_blank">Политика конфиденциальности</a>
+          <a class="footer__copyright-link" href="terms-and-conditions.html" target="_blank">Условия онлайн-использования</a>
         </div>
       </div>
     </footer>
   </div>
   <script src="scripts/slider.js" type="module"></script>
+
   <script src="scripts/menu.js" type="module"></script>
   <script src="scripts/infinity-slider.js" type="module"></script>
+  <script src="scripts/smooth-scroll.js" type="module"></script>
+
 </body>
 </html>
