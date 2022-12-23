@@ -60,6 +60,10 @@
     }
   }
 
+  &--mobile::after {
+    display: none;
+  }
+
   @media (max-width: 767px) {
     &--mobile {
       border: none;
@@ -71,6 +75,22 @@
       height: 18px;
       border-bottom: 4px solid #27AE60;
       border-right: 4px solid #27AE60;
+    }
+
+    &--mobile:hover , &--mobile:focus  {
+      background-color: transparent;
+      border: none;
+    }
+
+    &--mobile:hover::before,
+    &--mobile:focus::before {
+      border-bottom: 4px solid rgba(#27AE60, 0.7);
+      border-right: 4px solid rgba(#27AE60, 0.7);
+    }
+
+    &--mobile:active::before {
+      border-bottom: 4px solid rgba(#27AE60, 0.5);
+      border-right: 4px solid rgba(#27AE60, 0.5);
     }
   }
 

@@ -80,6 +80,7 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', gulp.series(minifyHTML));
   gulp.watch('source/scripts/*.js').on('change', gulp.series(minifyScripts));
   gulp.watch('source/*.html').on('change', sync.reload);
+  gulp.watch('source/scripts/*.js').on('change', sync.reload);
 }
 
 // htmlmin

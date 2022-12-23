@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сервис доставки здорового питания "Здоровая мама"</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -135,9 +137,12 @@
           Обязательные продукты <br>
           для здорового питания:
         </h2>
-        <div class="infinity-slider__container">
-          <ul class="infinity-slider__list">
-            <li class="infinity-slider__item infinity-slider-item ">
+        <div class="swiper infinity-slider__container">
+          <!-- Additional required wrapper -->
+          <ul class="swiper-wrapper infinity-slider__list">
+            <!-- Slides -->
+            <li class="swiper-slide">
+             <div class="infinity-slider__item infinity-slider-item" >
               <h3 class="infinity-slider-item__title">Овощи</h3>
               <div class="infinity-slider-item__image-container">
                 <picture>
@@ -150,10 +155,12 @@
               <p class="infinity-slider-item__desc">
                 Брокколи, тыква, цветная капуста, репка, огурцы. Готовьте блюда из тушеных смесей без добавления масла.
               </p>
+             </div>
             </li>
 
-            <li class="infinity-slider__item infinity-slider-item infinity-slider-item--active">
-              <h3 class="infinity-slider-item__title">Мясо</h3>
+            <li class="swiper-slide">
+              <div class="infinity-slider__item infinity-slider-item" >
+                <h3 class="infinity-slider-item__title">Мясо</h3>
               <div class="infinity-slider-item__image-container">
                 <picture>
                   <source type="image/webp" srcset="img/infinity-slider-2.webp, img/infinity-slider-2_@2x.webp 2x">
@@ -166,31 +173,35 @@
                 Крольчатина, телятина, индейка, курица без кожи. Мясные блюда ежедневно должны присутствовать в питании в
                 тушеном, запеченном или вареном виде.
               </p>
-            </li>
-
-            <li class="infinity-slider__item infinity-slider-item ">
-              <h3 class="infinity-slider-item__title">Продукты из молока</h3>
-              <div class="infinity-slider-item__image-container">
-                <picture>
-                  <source type="image/webp" srcset="img/infinity-slider-3.webp, img/infinity-slider-3_@2x.webp 2x">
-                  <img class="infinity-slider-item__image infinity-slider-item__image--milk"
-                    src="img/infinity-slider-3.jpg" srcset="img/infinity-slider-3_@2x.jpg 2x" width="225" height="261"
-                    alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
-                </picture>
               </div>
 
-              <p class="infinity-slider-item__desc">
-                Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно
-                либо через день.
-              </p>
+            </li>
+
+            <li class="swiper-slide">
+              <div class="infinity-slider__item infinity-slider-item" >
+                <h3 class="infinity-slider-item__title">Продукты из молока</h3>
+                <div class="infinity-slider-item__image-container">
+                  <picture>
+                    <source type="image/webp" srcset="img/infinity-slider-3.webp, img/infinity-slider-3_@2x.webp 2x">
+                    <img class="infinity-slider-item__image infinity-slider-item__image--milk"
+                      src="img/infinity-slider-3.jpg" srcset="img/infinity-slider-3_@2x.jpg 2x" width="225" height="261"
+                      alt="Зелёные овощи лежат в несколько рядов на деревянном столе">
+                  </picture>
+                </div>
+
+                <p class="infinity-slider-item__desc">
+                  Сыр, ряженка, простокваша, творог, йогурт без добавок, кефир. Желательно кушать их кормящей маме ежедневно
+                  либо через день.
+                </p>
+              </div>
             </li>
           </ul>
           <button
-            class="infinity-slider__control infinity-slider__control--left      slider-control slider-control--left slider-control--mobile">
+            class="swiper-button-prev infinity-slider__control infinity-slider__control--left      slider-control slider-control--left slider-control--mobile">
             <span class="visually-hidden">Левый слайд</span>
           </button>
           <button
-            class="infinity-slider__control infinity-slider__control--right     slider-control slider-control--right slider-control--mobile">
+            class="swiper-button-next infinity-slider__control infinity-slider__control--right     slider-control slider-control--right slider-control--mobile">
             <span class="visually-hidden">Правый слайд</span>
           </button>
         </div>
@@ -276,6 +287,6 @@
   </div>
   <script src="scripts/slider.js" type="module"></script>
   <script src="scripts/menu.js" type="module"></script>
-  <script src="scripts/smooth-scroll.js" type="module"></script>
+  <script src="scripts/infinity-slider.js" type="module"></script>
 </body>
 </html>

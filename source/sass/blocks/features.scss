@@ -1,13 +1,13 @@
 .features {
-  padding-top: 463px;
+  padding-top: 413px + 16px;
   overflow: hidden;
 
-  background: url("../../img/features-girls.png") left -146px top 36px no-repeat, url("../../img/features-background_mobile.jpg") center no-repeat;
+  background: url("../../img/features-girls.png") left -146px top 0px no-repeat, url("../../img/features-background_mobile.jpg") center no-repeat;
   background-size: auto 518px, 100% auto; //200%
 
   @media (min-resolution: 2dppx) {
     background:
-      url("../../img/features-girls_@2x.png") left -146px top 36px no-repeat,
+      url("../../img/features-girls_@2x.png") left -146px top 0px no-repeat,
       url("../../img/features-background_mobile@2x.jpg") center no-repeat;
     background-size: auto 518px, 100% auto;
   }
@@ -62,12 +62,12 @@
 
 @media (min-width: 768px) {
   .features {
-    padding-top: 900px;
+    padding-top: 860px;
     padding-left: 90px;
 
     background-image: url("../../img/features-girls.png"), url("../../img/features-background_tablet.jpg");
     background-size: 1100px auto, 100% auto;
-    background-position: top 100px left -115px, center;
+    background-position: top 65px left -115px, center;
     background-repeat: no-repeat;
 
     @media (min-resolution: 2dppx) {
@@ -75,7 +75,7 @@
         url("../../img/features-girls_@2x.png") left -146px top 36px no-repeat,
         url("../../img/features-background_tablet@2x.jpg") center no-repeat;
       background-size: 1100px auto, 100% auto;
-      background-position: top 100px left -115px, center;
+      background-position: top 65px left -115px, center;
     }
 
     @media(min-width: 900px) and (max-width: 1559px) {
@@ -124,20 +124,20 @@
 
 @media (min-width: 1560px) {
   .features {
-    padding: 0;
-    padding-top: 97px + 80px - 10px;
+    padding-top: 77px;
+    padding-left: 0;
 
     overflow: hidden;
     background:
       url("../../img/features-plant.png") left bottom -300px no-repeat,
-      url("../../img/features-girls.png") left 100px top 180px no-repeat,
+      url("../../img/features-girls.png") left 100px top 90px no-repeat,
       url("../../img/features-background_pc.jpg") bottom no-repeat;
     background-size: auto, 1260px auto, 100% auto;
 
     @media (min-resolution: 2dppx) {
       background:
         url("../../img/features-plant_@2x.png") left bottom -300px no-repeat,
-        url("../../img/features-girls_@2x.png") left 100px top 180px no-repeat,
+        url("../../img/features-girls_@2x.png") left 100px top 90px no-repeat,
         url("../../img/features-background_pc@2x.jpg") bottom no-repeat;
       background-size: 550px, 1260px auto, 100% auto;
     }

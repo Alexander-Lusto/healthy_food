@@ -1,7 +1,7 @@
 const menuButton = document.querySelector(`.header__mobile-menu-button`);
 const menuLinks = document.querySelectorAll(`.header__navigation-link`);
 const overlay = document.querySelector(`.overlay`);
-const header = document.querySelector(`.header`);
+const headerR = document.querySelector(`.header`);
 const footer = document.querySelector(`.footer`);
 const content = document.querySelector(`.content`);
 
@@ -21,3 +21,4 @@ const toggleMenu = () => {
 
 menuButton.addEventListener(`click`, toggleMenu);
 menuLinks.forEach((link) => link.addEventListener(`click`, toggleMenu));
+
