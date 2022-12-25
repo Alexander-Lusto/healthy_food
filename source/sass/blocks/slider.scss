@@ -2,7 +2,6 @@
   position: relative;
   height: 501px;
   overflow: hidden;
-
 }
 
 .slider__list {
@@ -41,8 +40,6 @@
 }
 
 .slider__slide-image-container {
-  z-index: 1;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +82,8 @@
 
 @media(min-width: 768px) {
   .slider {
+    overflow: visible;
     height: 624px;
-
     width: 633px;
     padding-left: 67px;
     margin-left: auto;
@@ -98,6 +95,7 @@
       position: absolute;
       top: 36px;
       right: 0;
+      z-index: 0;
 
       box-sizing: border-box;
       width: 502px;
@@ -112,6 +110,8 @@
       position: absolute;
       top: 76px;
       right: 40px;
+      z-index: 0;
+
 
       box-sizing: border-box;
       width: 420px;
@@ -307,7 +307,6 @@
     padding: 0;
     padding-top: 10px;
     width: 863px;
-
 
     &::before {
       top: 105px;

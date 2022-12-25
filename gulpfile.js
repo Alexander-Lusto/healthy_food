@@ -86,7 +86,7 @@ const watcher = () => {
 // htmlmin
 const minifyHTML = async () => {
   gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: false }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
 }
 export { minifyHTML };

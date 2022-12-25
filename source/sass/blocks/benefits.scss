@@ -1,7 +1,12 @@
 .benefits {
   background-image: linear-gradient(to bottom, #27AE60 753px, white 753px);
   padding-top: 58px;
+  z-index: 0;
 
+}
+
+.benefits__inner-content {
+  z-index: 1;
 }
 
 .benefits__title {
@@ -18,8 +23,6 @@
   @media(min-width: 450px) {
     text-align: center;
   }
-
-
 }
 
 .benefits__list {

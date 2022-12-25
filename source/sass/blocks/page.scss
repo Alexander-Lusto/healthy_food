@@ -1,6 +1,6 @@
 html {
   background-color: #000000;
-
+  overflow-x: hidden;
 }
 
 .page {
@@ -10,7 +10,7 @@ html {
   background-size: 100% auto;
   margin: 0 auto;
   min-width: 320px;
-  //width: 320px;
+  overflow-x: hidden;
 
   @media (min-resolution: 2dppx) {
     background: #FFFFFF url("../../img/page-background_mobile@2x.jpg") top no-repeat;
@@ -44,6 +44,7 @@ html {
 
 @media(min-width: 768px) {
   .page {
+    position: relative;
     background: #FFFFFF url("../../img/page-background_tablet.jpg") top no-repeat;
     background-size: 100% auto;
 
@@ -86,6 +87,7 @@ html {
   .page {
     background: #FFFFFF url("../../img/page-background_pc.jpg") top no-repeat;
     background-size: 100% auto;
+    overflow-x: hidden;
 
     @media (min-resolution: 2dppx) {
       background: #FFFFFF url("../../img/page-background_pc@2x.jpg") top no-repeat;

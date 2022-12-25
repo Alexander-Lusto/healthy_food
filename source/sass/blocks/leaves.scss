@@ -1,0 +1,202 @@
+.leaves {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.leaves__leaf {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  z-index: 0;
+
+  animation-name: fall-and-fade;
+  animation-duration: 8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+
+  @media(min-width: 1560px) {
+    animation-name: fall-and-fade-pc;
+  }
+
+
+  &::before {
+    content: "";
+    display: block;
+    background: transparent url("../../img/leaf.png") center no-repeat;
+    background-size: contain;
+
+    animation-name: spin-forward;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+
+    @media (min-resolution: 2dppx) {
+      background: transparent url("../../img/leaf_@2x.png") center no-repeat;
+      background-size: contain;
+    }
+
+    @media(min-width: 768px) {
+      animation-name: spin-forward;
+    }
+  }
+
+
+
+  &--huge {
+    right: 10%;
+    animation-delay: 0s;
+
+    &::before {
+      width: 250px;
+      height: 250px;
+      animation-delay: 0s;
+    }
+
+    @media(min-width: 768px) {
+      right: -10%;
+    }
+  }
+
+  &--big {
+    left: 5%;
+    animation-delay: 10s;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      animation-delay: 10s;
+    }
+
+    @media(min-width: 768px) {
+      left: -10%;
+    }
+
+  }
+
+  &--medium {
+    left: 50%;
+    animation-delay: 5s;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      animation-name: spin-backward;
+      animation-delay: 5s;
+    }
+  }
+
+  &--normal {
+    right: 30%;
+    animation-delay: 7s;
+
+    &::before {
+      width: 90px;
+      height: 90px;
+      animation-delay: 7s;
+    }
+  }
+
+  &--small {
+    left: 40%;
+    animation-delay: 1s;
+
+    &::before {
+      width: 75px;
+      height: 75px;
+
+      animation-name: spin-backward;
+      animation-delay: 1s;
+    }
+  }
+
+  &--tiny {
+    left: 45%;
+    animation-delay: 2s;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--mobile-hidden {
+    display: none;
+
+    @media(min-width: 768px) {
+      display: block;
+    }
+
+  }
+}
+
+
+@keyframes fall-and-fade-pc {
+  0% {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(70vh);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-and-fade {
+  0% {
+    transform: translateY(-200px);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(80vh);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-forward {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(20vw) rotate(-90deg);
+  }
+
+
+  100% {
+   transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes spin-backward {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(-10vw) rotate(90deg);
+  }
+
+
+  100% {
+   transform: translateX(0) rotate(0deg);
+  }
+}
+
+
