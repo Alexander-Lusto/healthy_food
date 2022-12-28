@@ -13,8 +13,8 @@ import imagemin from 'gulp-imagemin';
 import mozjpeg from 'imagemin-mozjpeg';
 import optipng from 'imagemin-optipng';
 import svgo from 'imagemin-svgo';
-import {deleteSync, deleteAsync} from 'del';
 import uglify from 'gulp-uglify';
+import {deleteSync, deleteAsync} from 'del';
 
 const sass = gulpSass(scss);
 
@@ -86,7 +86,7 @@ const watcher = () => {
 // htmlmin
 const minifyHTML = async () => {
   gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: false }))
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
 }
 export { minifyHTML };
@@ -101,9 +101,9 @@ export { copyFonts };
 // js
 const minifyScripts = async () => {
   gulp.src('source/scripts/*.js')
-    //.pipe(uglify())
+    .pipe(uglify())
     .pipe(gulp.dest('build/scripts'))
-  }
+}
 export { minifyScripts };
 
 // clean
