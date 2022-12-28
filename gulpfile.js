@@ -14,6 +14,7 @@ import mozjpeg from 'imagemin-mozjpeg';
 import optipng from 'imagemin-optipng';
 import svgo from 'imagemin-svgo';
 import {deleteSync, deleteAsync} from 'del';
+import uglify from 'gulp-uglify';
 
 const sass = gulpSass(scss);
 
@@ -53,6 +54,13 @@ const optimizeImages = () => (
 );
 export { optimizeImages };
 
+// webp
+const copyWebp = async () => {
+  gulp.src('source/img/**/*.webp')
+    .pipe(gulp.dest('build/img'))
+}
+export { copyWebp };
+
 //server
 const server = (done) => {
   sync.init({
@@ -70,16 +78,33 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/*.html').on('change', gulp.series(minifyHTML));
+  gulp.watch('source/scripts/*.js').on('change', gulp.series(minifyScripts));
   gulp.watch('source/*.html').on('change', sync.reload);
+  gulp.watch('source/scripts/*.js').on('change', sync.reload);
 }
 
 // htmlmin
 const minifyHTML = async () => {
   gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({ collapseWhitespace: false }))
     .pipe(gulp.dest('build'))
 }
 export { minifyHTML };
+
+// fonts
+const copyFonts = async () => {
+  gulp.src('source/fonts/*.{woff,woff2}')
+    .pipe(gulp.dest('build/fonts'))
+}
+export { copyFonts };
+
+// js
+const minifyScripts = async () => {
+  gulp.src('source/scripts/*.js')
+    //.pipe(uglify())
+    .pipe(gulp.dest('build/scripts'))
+  }
+export { minifyScripts };
 
 // clean
 const clean = () => {
@@ -91,8 +116,11 @@ export { clean };
 const build = gulp.series(
   clean,
   gulp.parallel(
+    copyFonts,
+    copyWebp,
     styles,
     minifyHTML,
+    minifyScripts,
     optimizeImages)
 )
 export { build };

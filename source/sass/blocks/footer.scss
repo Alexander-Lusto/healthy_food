@@ -1,0 +1,134 @@
+.footer {
+  background-color: #27AE60;
+  padding: 40px 20px 50px 20px;
+
+
+  @media(min-width: 400px) and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+
+  transition-duration: 0.4s;
+  transition-property: color;
+
+  margin-bottom: 30px;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.footer__navigation-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+}
+
+.footer__navigation-item {
+  list-style: none;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.footer__navigation-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+  border-bottom: 1px solid transparent;
+
+  transition-duration: 0.3s;
+  transition-property: color, border;
+
+  &:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+  }
+}
+
+.footer__copyright-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 118%;
+  color: rgba(#FFFFFF, 0.5);
+
+  transition-duration: 0.3s;
+  transition-property: color;
+
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  &:hover {
+    color: rgba(#000000, 0.5);
+  }
+}
+
+
+@media(min-width: 768px) {
+  .footer {
+    padding: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+  }
+
+  .footer__inner-content {
+    box-sizing: border-box;
+    padding-left: 78px;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .footer__navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 25px;
+  }
+
+  .footer__navigation-item:not(:first-child) {
+    margin-left: 89px;
+  }
+
+  .footer__copyright {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__copyright-link:not(:first-child) {
+    margin-left: 40px;
+  }
+}
+
+@media(min-width: 1560px) {
+  .footer {
+    padding: 50px 0;
+  }
+  .footer__inner-content {
+    padding: 0;
+    width: 616px;
+    margin: 0 auto;
+  }
+
+  .footer__navigation-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}

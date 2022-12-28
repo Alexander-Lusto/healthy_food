@@ -1,0 +1,107 @@
+.feature {
+  position: relative;
+  padding-left: 47px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: -5px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 35px rgba(25, 130, 189, 0.18);
+  }
+
+  &--eco::before {
+    background-image: url("../../img/icons/eco.svg");
+  }
+
+  &--balance::before {
+    background-image: url("../../img/icons/balance.svg");
+  }
+
+  &--identity::before {
+    background-image: url("../../img/icons/identity.svg");
+  }
+
+  &--health::before {
+    background-image: url("../../img/icons/health.svg");
+  }
+}
+
+.feature br {
+  display: none;
+}
+
+.feature__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 118%;
+  color: #000000;
+
+  margin-bottom: 2px;
+}
+
+.feature__desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 118%;
+  color: #000000;
+
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .feature {
+    padding-left: 83px;
+
+    &::before {
+      top: 5px;
+      left: 2px;
+      width: 60px;
+      height: 60px;
+      background-size: 50%;
+    }
+
+    &--eco::before {
+      top: -3px;
+      background-image: url("../../img/icons/eco.svg");
+    }
+
+    &--balance::before {
+      background-image: url("../../img/icons/balance.svg");
+    }
+
+    &--identity::before {
+      top: 1px;
+      background-image: url("../../img/icons/identity.svg");
+    }
+
+    &--health::before {
+      top: -5px;
+      background-image: url("../../img/icons/health.svg");
+    }
+  }
+
+  .feature br {
+    display: inline;
+  }
+  .feature__name {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  .feature__desc {
+    font-size: 18px;
+  }
+
+  .feature--health .feature__desc {
+    font-size: 16px;
+  }
+}

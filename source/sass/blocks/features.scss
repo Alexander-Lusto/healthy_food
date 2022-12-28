@@ -1,0 +1,165 @@
+.features {
+  padding-top: 413px + 16px;
+  overflow: hidden;
+
+  background: url("../../img/features-girls.png") left -146px top 0px no-repeat, url("../../img/features-background_mobile.jpg") center no-repeat;
+  background-size: auto 518px, 100% auto; //200%
+
+  @media (min-resolution: 2dppx) {
+    background:
+      url("../../img/features-girls_@2x.png") left -146px top 0px no-repeat,
+      url("../../img/features-background_mobile@2x.jpg") center no-repeat;
+    background-size: auto 518px, 100% auto;
+  }
+
+  @media(min-width: 500px) and (max-width: 767px) {
+    background-position: bottom 280px center, center;
+  }
+
+
+}
+
+.features__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__tittle {
+  order: 2;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 118%;
+  color: #27AE60;
+
+  padding: 0 15px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media(min-width: 500px) and (max-width: 767px) {
+    text-align: center;
+
+    br {
+      display: none;
+    }
+  }
+
+}
+
+.features__list {
+  order: 3;
+  padding: 0 20px 0 15px;
+  margin: 0;
+
+  @media(min-width: 500px) and (max-width: 767px) {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.features__item {
+  margin-bottom: 31px;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding-top: 860px;
+    padding-left: 90px;
+
+    background-image: url("../../img/features-girls.png"), url("../../img/features-background_tablet.jpg");
+    background-size: 1100px auto, 100% auto;
+    background-position: top 65px left -115px, center;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../../img/features-girls_@2x.png") left -146px top 36px no-repeat,
+        url("../../img/features-background_tablet@2x.jpg") center no-repeat;
+      background-size: 1100px auto, 100% auto;
+      background-position: top 65px left -115px, center;
+    }
+
+    @media(min-width: 900px) and (max-width: 1559px) {
+      background-position: top 100px center, center;
+    }
+
+
+  }
+
+  .features__tittle {
+    font-size: 41px;
+
+    margin-bottom: 85px;
+
+    @media(min-width: 900px) and (max-width: 1559px) {
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .features__list {
+    padding-right: 0;
+    width: 556px;
+
+    @media(min-width: 900px) and (max-width: 1559px) {
+      width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .features__item {
+    margin-bottom: 40px;
+  }
+
+  .features__item {
+    margin-bottom: 40px;
+  }
+
+  .features__item--identity {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: 1560px) {
+  .features {
+    padding-top: 77px;
+    padding-left: 0;
+
+    overflow: hidden;
+    background:
+      url("../../img/features-plant.png") left bottom -300px no-repeat,
+      url("../../img/features-girls.png") left 100px top 90px no-repeat,
+      url("../../img/features-background_pc.jpg") bottom no-repeat;
+    background-size: auto, 1260px auto, 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        url("../../img/features-plant_@2x.png") left bottom -300px no-repeat,
+        url("../../img/features-girls_@2x.png") left 100px top 90px no-repeat,
+        url("../../img/features-background_pc@2x.jpg") bottom no-repeat;
+      background-size: 550px, 1260px auto, 100% auto;
+    }
+  }
+
+  .features__inner {
+    padding-top: 100px + 5px;
+    padding-right: 350px;
+    width: 1560px;
+    padding-bottom: 300px;
+
+    margin: 0 auto;
+  }
+
+  .features__tittle {
+    width: 554px;
+    padding: 0;
+    margin-left: auto;
+    margin-bottom: 86px;
+  }
+
+  .features__list {
+    margin-left: auto;
+  }
+}

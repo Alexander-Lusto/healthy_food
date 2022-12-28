@@ -1,0 +1,136 @@
+html {
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.page {
+  font-family: 'Lato';
+  color: #000000;
+  background: #FFFFFF url("../../img/page-background_mobile.jpg") top no-repeat;
+  background-size: 100% auto;
+  margin: 0 auto;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  @media (min-resolution: 2dppx) {
+    background: #FFFFFF url("../../img/page-background_mobile@2x.jpg") top no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.page__promo {
+  margin-bottom: 80px;
+}
+
+.page__slider {
+  margin-bottom: 0px;
+}
+
+.page__benefits {
+  margin-bottom: 68px;
+}
+
+.page__infinity-slider {
+  margin-bottom: 0;
+}
+
+.page__features {
+  margin-bottom: 78px;
+}
+
+.page__order {
+  margin-top: -167px;
+}
+
+@media(min-width: 768px) {
+  .page {
+    position: relative;
+    background: #FFFFFF url("../../img/page-background_tablet.jpg") top no-repeat;
+    background-size: 100% auto;
+
+    @media (min-resolution: 2dppx) {
+      background: #FFFFFF url("../../img/page-background_tablet@2x.jpg") top no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .page__header {
+    margin: 0 auto;
+  }
+
+  .page__promo {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  .page__slider {
+    margin: 0 34px 0 100px;
+    margin-bottom: 52px - 3px;
+  }
+
+  .page__benefits {
+    margin-bottom: 85px;
+  }
+
+  .page__features {
+    margin-bottom: 187px;
+  }
+
+  .page__order {
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 238px;
+  }
+}
+
+@media(min-width: 1560px) {
+  .page {
+    background: #FFFFFF url("../../img/page-background_pc.jpg") top no-repeat;
+    background-size: 100% auto;
+    overflow-x: hidden;
+
+    @media (min-resolution: 2dppx) {
+      background: #FFFFFF url("../../img/page-background_pc@2x.jpg") top no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  .page__slider {
+    margin: 0;
+    margin-bottom: 0px;
+  }
+
+  .page__benefits {
+    margin-bottom: 156px;
+    margin: 0;
+  }
+
+  .page__infinity-slider {
+    z-index: 2;
+    margin: 0;
+    //margin-bottom: 40px;
+  }
+
+  .page__features {
+    z-index: 1;
+    margin-bottom: 40px;
+  }
+
+  .page__gallery {
+    margin-bottom: 43px - 20px;
+  }
+
+  .page__order {
+    margin-bottom: 0;
+  }
+
+  .page__content {
+    background: url("../../img/content-pattern_pc.png") bottom right no-repeat;
+    padding-bottom: 89px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../../img/content-pattern_pc@2x.png") bottom right no-repeat;
+      background-size: 50%;
+    }
+  }
+}
