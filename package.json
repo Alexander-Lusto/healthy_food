@@ -12,6 +12,7 @@
     "styles": "gulp styles",
     "webp": "gulp copyWebp",
     "html": "gulp minifyHTML",
+    "scripts": "gulp minifyScripts",
     "start": "gulp"
   },
   "repository": {
@@ -42,6 +43,7 @@
     "imagemin-svgo": "10.0.1",
     "postcss-csso": "6.0.1",
     "sass": "1.56.1",
-    "swiper": "8.4.5"
+    "swiper": "8.4.5",
+    "uglify-js": "3.17.4"
   }
 }
