@@ -27,7 +27,7 @@ const styles = () => {
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename('style.min.css'))
     .pipe(sourcemap.write('../css'))
-    .pipe(gulp.dest('build/css/minified'))
+    .pipe(gulp.dest('build/css/'))
     .pipe(sync.stream())
 }
 export { styles };
